@@ -1,0 +1,33 @@
+.container{
+            background-color: white;
+            border-radius: 20px;
+            width:300px;
+            height: 250px;
+            transform: translate(480px,150px);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 30px;
+            padding-top: 25px;
+        }
+        input{
+            width:75%;
+            border-radius: 2px;
+            border:1px solid grey;
+            margin-top: 10px;
+            padding: 5px;
+        }
+        button{
+            margin-top: 15px;
+            background-color: blue;
+            color:white;
+            border-radius: 3px;
+            border: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        #result{
+            font-size: 20px;
+        }

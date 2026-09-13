@@ -1,0 +1,30 @@
+.contain{
+            background-color: rgb(209, 207, 207);
+            border-radius: 20px;
+            width:350px;
+            height: 250px;
+            transform: translate(450px,150px);
+            text-align: center;
+            font-size: 30px; 
+            font-weight: bold;
+        }
+        .contain p{
+            padding-top: 10px;
+            font-size: 25px;
+        }
+        .contain button{
+            border-radius: 3px;
+            border: none;
+            color: white;
+            padding: 10px;
+            width: 80px;
+        }
+        .st{
+            background-color: rgb(5, 116, 5);
+        }
+        .stop{
+            background-color: rgb(199, 25, 25);
+        }
+        .re{
+            background-color: grey;
+        }
