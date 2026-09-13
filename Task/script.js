@@ -1,13 +1,13 @@
-const input=document.getElementById('taskInput');
-const list=document.getElementById('list');
-let tasks=JSON.parse(localStorage.getItem('tasks'))||[];
-function save(){
-    localStorage.setItem('tasks',JSON.stringify(tasks))
-}
+const input = document.getElementById('taskInput');
+const list = document.getElementById('list');
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function save(){ localStorage.setItem('tasks', JSON.stringify(tasks)) }
+
 function render(){
-    list.innerHTML='';
+    list.innerHTML = '';
     tasks.forEach((t,i)=>{
-        list.innerHTML+=`<div class="task">
+        list.innerHTML += `<div class="task">
         <span>${t.text}</span>
         <div class="actions">
             <input type="checkbox" ${t.done?'checked':''} onchange="tasks[${i}].done=!tasks[${i}].done;save();render()">
@@ -20,10 +20,12 @@ function render(){
         </div>`;
     });
 }
-input.addEventListener('keypress',e=>{
-    if(e.key==='Enter'&&input.value.trim()){
-        tasks.push({text:input.value.trim(),done:false});
-        save();render();input.value='';
+
+input.addEventListener('keypress', e=>{
+    if(e.key === 'Enter' && input.value.trim()){
+        tasks.push({text:input.value.trim(), done:false});
+        save(); render(); input.value = '';
     }
 });
+
 render();
